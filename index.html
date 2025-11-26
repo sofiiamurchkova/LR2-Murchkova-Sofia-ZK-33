@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>GrowMate - Друг за доглядом та вирощуванням рослин</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Перейти до контенту</a>
+
+  <header>
+    <div class="container header-inner">
+      <a href="index.html" class="logo" aria-label="GrowMate: головна">
+        <img src="images/logo.png" alt="GrowMate логотип" width="140" height="120" />
+      </a>
+      <nav aria-label="Головна навігація">
+        <ul class="nav-list">
+          <li><a href="index.html">Головна</a></li>
+          <li><a href="about.html">Про проєкт</a></li>
+          <li><a href="plants.html">База рослин</a></li>
+          <li><a href="care-calendar.html">Календар догляду</a></li>
+          <li><a href="community.html">Спільнота</a></li>
+          <li><a href="contacts.html">Контакти</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="plants">
+      <div class="container" style="text-align: center;">
+        <h1>GrowMate - Друг за доглядом та вирощуванням рослин</h1>
+        <p>Онлайн-платформа для садівників: поради, персональний календар поливу і місце для обміну досвідом.</p>
+        <img src="images/plants.png" alt="Кімнатні рослини на підвіконні" width="600" height="300" style="display: block; margin: 0 auto; max-width: 100%; height: auto;" />
+      </div>
+    </section>
+
+    <section class="features container" aria-labelledby="features-heading">
+      <h2 id="features-heading">Що пропонує GrowMate</h2>
+      <ul>
+        <li>Інтерактивна база рослин.</li>
+        <li>Календар догляду з нагадуваннями про полив і підживлення.</li>
+        <li>Спільнота для обміну порадами, фото і насінням.</li>
+      </ul>
+    </section>
+
+    <section class="signup container" aria-labelledby="signup-heading">
+      <h2 id="signup-heading">Підпишись на оновлення</h2>
+      <form action="#" method="post" id="subscribe-form" novalidate>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required placeholder="твій@gmail.com" />
+        <label for="pref">Отримувати:</label>
+        <select id="pref" name="preference">
+          <option value="tips">Поради</option>
+          <option value="events">Заходи</option>
+        </select>
+        <button type="submit">Підписатися</button>
+      </form>
+    </section>
+
+  <footer>
+    <div class="container">
+      <p>© 2025 GrowMate. Усі права захищені.</p>
+      <nav aria-label="Футер навігація">
+        <ul>
+          <li><a href="about.html">Про нас</a></li>
+          <li><a href="contacts.html">Контакти</a></li>
+          <li><a href="#">Політика конфіденційності</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="js/script.js" defer></script>
+</body>
+</html>

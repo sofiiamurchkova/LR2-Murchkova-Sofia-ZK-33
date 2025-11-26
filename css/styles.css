@@ -1,0 +1,33 @@
+:root{
+  --green: #1D6836;
+  --light: #D5EEC6;
+  --accent: #EDC28A;
+  --text: #222;
+  --max-w: 1000px;
+  font-family: "Open Sans", Arial, sans-serif;
+}
+
+*{box-sizing:border-box}
+body{margin:0;color:var(--text);line-height:1.45}
+.container{max-width:var(--max-w);margin:0 auto;padding:1rem}
+
+.header-inner{display:flex;align-items:center;justify-content:space-between;padding:0.5rem 0}
+.nav-list{list-style:none;margin:0;padding:0;display:flex;gap:1rem}
+.nav-list a{text-decoration:none;color:var(--green)}
+.header .logo img{display:block}
+
+/* plants */
+.plants{background:var(--light);padding:2rem 0;border-bottom:1px solid #e6e6e6}
+.plants h1{margin-top:0}
+
+/* forms */
+form{display:flex;flex-direction:column;gap:0.5rem;max-width:420px}
+input,select,textarea{padding:0.5rem;border:1px solid #ccc;border-radius:6px}
+button{padding:0.6rem 1rem;border:none;background:var(--green);color:white;border-radius:6px;cursor:pointer}
+
+/* footer */
+footer{background:#f7f7f7;padding:1rem 0;margin-top:2rem}
+
+/* skip link */
+.skip-link{position:absolute;left:-999px;top:auto;width:1px;height:1px;overflow:hidden}
+.skip-link:focus{position:static;width:auto;height:auto;padding:.5rem;background:#000;color:#fff}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Контакти — GrowMate</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Перейти до контенту</a>
+
+  <header>
+    <div class="container header-inner">
+      <a href="index.html" class="logo" aria-label="GrowMate: головна">
+        <img src="images/logo.png" alt="GrowMate логотип" width="140" height="120" />
+      </a>
+      <nav aria-label="Головна навігація">
+        <ul class="nav-list">
+          <li><a href="index.html">Головна</a></li>
+          <li><a href="about.html">Про проєкт</a></li>
+          <li><a href="plants.html">База рослин</a></li>
+          <li><a href="care-calendar.html">Календар догляду</a></li>
+          <li><a href="community.html">Спільнота</a></li>
+          <li><a href="contacts.html" class="active">Контакти</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="container">
+    <h1>Контакти</h1>
+    <p>Є питання або пропозиція? Напиши нам через форму нижче.</p>
+
+    <form id="contact-form" action="#" method="post" novalidate>
+      <label for="name">Ім'я</label>
+      <input id="name" name="name" type="text" required />
+
+      <label for="email-contact">Email</label>
+      <input id="email-contact" name="email" type="email" required />
+
+      <label for="subject">Тема</label>
+      <input id="subject" name="subject" type="text" required />
+
+      <label for="message">Повідомлення</label>
+      <textarea id="message" name="message" rows="6" required></textarea>
+
+      <button type="submit">Надіслати</button>
+    </form>
+
+    <section aria-labelledby="office">
+      <h2 id="office">Офіс та соціальні мережі</h2>
+      <p>Електронна пошта: <a href="mailto:info@growmate.com">info@growmate.com</a></p>
+      <p>Ми в соціальних мережах: <a href="#" rel="noopener noreferrer" target="_blank">Facebook</a>, <a href="#" rel="noopener noreferrer" target="_blank">Instagram</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>© 2025 GrowMate.</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js" defer></script>
+</body>
+</html>

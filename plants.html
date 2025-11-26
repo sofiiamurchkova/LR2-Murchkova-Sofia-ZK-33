@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>База рослин — GrowMate</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Перейти до контенту</a>
+
+  <header>
+    <div class="container header-inner">
+      <a href="index.html" class="logo" aria-label="GrowMate: головна">
+        <img src="images/logo.png" alt="GrowMate логотип" width="140" height="120" />
+      </a>
+      <nav aria-label="Головна навігація">
+        <ul class="nav-list">
+          <li><a href="index.html">Головна</a></li>
+          <li><a href="about.html">Про проєкт</a></li>
+          <li><a href="plants.html" class="active">База рослин</a></li>
+          <li><a href="care-calendar.html">Календар догляду</a></li>
+          <li><a href="community.html">Спільнота</a></li>
+          <li><a href="contacts.html">Контакти</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="container">
+    <h1>База рослин</h1>
+    <p>Тут зібрана інформація про популярні кімнатні та садові рослини: вимоги до світла, поливу, грунту і поради по догляду.</p>
+
+    <section aria-labelledby="search-heading">
+      <h2 id="search-heading">Пошук по базі</h2>
+      <form id="plant-search" action="#" method="get">
+        <label for="q">Пошук (назва виду або характеристика):</label>
+        <input id="q" name="q" type="search" placeholder="Наприклад: фікус" />
+        <button type="submit">Знайти</button>
+      </form>
+    </section>
+
+    <section aria-labelledby="list-heading">
+      <h2 id="list-heading">Приклади карток рослин</h2>
+
+      <ul class="plant-list">
+        <li class="plant-card">
+          <h3>Фікус Бенджаміна</h3>
+          <img src="images/ficus.png" alt="Фікус Бенджаміна" width="400" height="600" style="display: block; max-width: 100%; height: auto;" />
+          <p>Потребує яскравого розсіяного світла, полив помірний, вологість середня.</p>
+          <a href="care-calendar.html">Додати у календар догляду</a>
+        </li>
+
+        <li class="plant-card">
+          <h3>Сансевієрія (щучий хвіст)</h3>
+          <img src="images/sansevieria.png" alt="Сансевієрія" width="400" height="400" style="display: block; max-width: 100%; height: auto;" />
+          <p>Витривала рослина, терпить тінь та нерегулярний полив.</p>
+          <a href="care-calendar.html">Додати у календар догляду</a>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>© 2025 GrowMate.</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js" defer></script>
+</body>
+</html>

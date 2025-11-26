@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Спільнота — GrowMate</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Перейти до контенту</a>
+
+  <header>
+    <div class="container header-inner">
+      <a href="index.html" class="logo" aria-label="GrowMate: головна">
+        <img src="images/logo.png" alt="GrowMate логотип" width="140" height="120" />
+      </a>
+      <nav aria-label="Головна навігація">
+        <ul class="nav-list">
+          <li><a href="index.html">Головна</a></li>
+          <li><a href="about.html">Про проєкт</a></li>
+          <li><a href="plants.html">База рослин</a></li>
+          <li><a href="care-calendar.html">Календар догляду</a></li>
+          <li><a href="community.html" class="active">Спільнота</a></li>
+          <li><a href="contacts.html">Контакти</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="container">
+    <h1>Спільнота GrowMate</h1>
+    <p>Місце для обміну досвідом: пости, фото, питання і відповіді.</p>
+
+    <section aria-labelledby="forum">
+      <h2 id="forum">Останні теми</h2>
+      <ul>
+        <li><strong>Проблеми з поливом фікусу</strong> - поради від користувачів.</li>
+        <li><strong>Кращі рослини для тіньових підвіконь</strong> - фото та рекомендації.</li>
+        <li><strong>Обмін насінням у Києві</strong> - деталі зустрічі.</li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="post">
+      <h2 id="post">Створити повідомлення</h2>
+      <form id="post-form" action="#" method="post">
+        <label for="post-title">Заголовок</label>
+        <input id="post-title" name="title" type="text" required />
+
+        <label for="post-body">Текст</label>
+        <textarea id="post-body" name="body" rows="5" required></textarea>
+
+        <button type="submit">Опублікувати</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>© 2025 GrowMate.</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js" defer></script>
+</body>
+</html>
