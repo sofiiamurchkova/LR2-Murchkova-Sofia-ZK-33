@@ -14,6 +14,11 @@
       <a href="index.html" class="logo" aria-label="GrowMate: головна">
         <img src="images/logo.png" alt="GrowMate логотип" width="140" height="120">
       </a>
+    <div class="burger" aria-label="Меню">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
       <nav aria-label="Головна навігація">
         <ul class="nav-list">
           <li><a href="index.html">Головна</a></li>
@@ -33,10 +38,10 @@
 
     <form id="contact-form" action="#" method="post" novalidate>
       <label for="name">Ім'я</label>
-      <input id="name" name="name" type="text" required>
+      <input id="name" name="name" type="text" placeholder="Ваше ім'я" required>
 
       <label for="email-contact">Email</label>
-      <input id="email-contact" name="email" type="email" required>
+      <input id="email-contact" name="email" type="email" placeholder="твій@gmail.com" required>
 
       <label for="subject">Тема</label>
       <input id="subject" name="subject" type="text" required>
@@ -46,7 +51,8 @@
 
       <button type="submit">Надіслати</button>
     </form>
-
+    <div id="form-message" style="margin-top:1rem; font-weight:bold;"></div>
+    
     <section aria-labelledby="office">
       <h2 id="office">Офіс та соціальні мережі</h2>
       <p>Електронна пошта: <a href="mailto:info@growmate.com">info@growmate.com</a></p>

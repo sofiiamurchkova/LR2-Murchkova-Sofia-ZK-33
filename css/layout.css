@@ -1,0 +1,40 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #D5EEC6;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 15px;
+    padding: 0;
+    margin: 0;
+}
+
+main {
+    padding: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #D5EEC6;
+}
+
+/* Flexbox для секції карток рослин */
+.plants {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.plants article {
+    flex: 1 1 250px;
+    background-color: #F5F5F5;
+    padding: 10px;
+    border-radius: 8px;
+}
+

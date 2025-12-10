@@ -1,3 +1,7 @@
+@import url('base.css');
+@import url('layout.css');
+@import url('components.css');
+
 :root{
   --green: #1D6836;
   --light: #D5EEC6;
@@ -24,6 +28,35 @@ body{margin:0;color:var(--text);line-height:1.45}
 form{display:flex;flex-direction:column;gap:0.5rem;max-width:420px}
 input,select,textarea{padding:0.5rem;border:1px solid #ccc;border-radius:6px}
 button{padding:0.6rem 1rem;border:none;background:var(--green);color:white;border-radius:6px;cursor:pointer}
+/* Стилі полів */
+input, select, textarea {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    transition: border-color 0.3s;
+}
+
+input:focus, select:focus, textarea:focus {
+    border-color: var(--green);
+    outline: none;
+}
+
+/* Повідомлення про помилки */
+.error-message {
+    color: red;
+    font-size: 0.9rem;
+    margin-top: -0.2rem;
+    margin-bottom: 0.5rem;
+    display: none; 
+}
+
+/* Повідомлення про успішну відправку */
+#form-message.success {
+    color: green;
+}
+#form-message.error {
+    color: red;
+}
 
 /* footer */
 footer{background:#f7f7f7;padding:1rem 0;margin-top:2rem}
@@ -31,3 +64,65 @@ footer{background:#f7f7f7;padding:1rem 0;margin-top:2rem}
 /* skip link */
 .skip-link{position:absolute;left:-999px;top:auto;width:1px;height:1px;overflow:hidden}
 .skip-link:focus{position:static;width:auto;height:auto;padding:.5rem;background:#000;color:#fff}
+
+/* Базове меню */
+.nav-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 1rem;
+}
+
+/* Бургер кнопка */
+.burger {
+  display: none; 
+  flex-direction: column;
+  cursor: pointer;
+  gap: 4px;
+}
+
+.burger div {
+  width: 25px;
+  height: 3px;
+  background-color: var(--green);
+  transition: all 0.3s ease;
+}
+
+/* Мобільні стилі */
+@media (max-width: 768px) {
+  .burger {
+    display: flex;
+  }
+
+  .header-inner {
+    position: relative;
+  }
+
+  .nav-list {
+    display: none; 
+    flex-direction: column;
+    background: var(--light);
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 200px;
+    padding: 1rem;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+  }
+
+  .nav-list.active {
+    display: flex;
+  }
+
+  .nav-list li {
+    margin-bottom: 0.5rem;
+  }
+
+  .nav-list li a {
+    display: block;
+  }
+}
+
+

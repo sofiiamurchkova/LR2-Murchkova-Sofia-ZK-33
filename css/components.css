@@ -1,0 +1,30 @@
+button {
+    background-color: #6B705C;
+    color: #FFFFFF;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'PT Sans Caption', sans-serif;
+}
+
+button:hover {
+    background-color: #EDC28A;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px;
+}
+
+input, textarea {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input:invalid, textarea:invalid {
+    border-color:  #6B705C;
+}
