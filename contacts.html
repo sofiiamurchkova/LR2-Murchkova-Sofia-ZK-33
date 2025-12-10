@@ -15,9 +15,9 @@
         <img src="images/logo.png" alt="GrowMate логотип" width="140" height="120">
       </a>
     <div class="burger" aria-label="Меню">
-      <span></span>
-      <span></span>
-      <span></span>
+      <div></div>
+      <div></div>
+      <div></div>
     </div>
       <nav aria-label="Головна навігація">
         <ul class="nav-list">
@@ -39,15 +39,19 @@
     <form id="contact-form" action="#" method="post" novalidate>
       <label for="name">Ім'я</label>
       <input id="name" name="name" type="text" placeholder="Ваше ім'я" required>
+      <span class="error-message" style="color:red; display:block; font-size:0.9em; margin-top:0.2rem;"></span>
 
       <label for="email-contact">Email</label>
       <input id="email-contact" name="email" type="email" placeholder="твій@gmail.com" required>
+      <span class="error-message" style="color:red; display:block; font-size:0.9em; margin-top:0.2rem;"></span>
 
       <label for="subject">Тема</label>
       <input id="subject" name="subject" type="text" required>
+      <span class="error-message" style="color:red; display:block; font-size:0.9em; margin-top:0.2rem;"></span>
 
       <label for="message">Повідомлення</label>
       <textarea id="message" name="message" rows="6" required></textarea>
+      <span class="error-message" style="color:red; display:block; font-size:0.9em; margin-top:0.2rem;"></span>
 
       <button type="submit">Надіслати</button>
     </form>
@@ -67,5 +71,6 @@
   </footer>
 
   <script src="js/script.js" defer></script>
+  <script src="./js/main.js" defer></script>
 </body>
 </html>

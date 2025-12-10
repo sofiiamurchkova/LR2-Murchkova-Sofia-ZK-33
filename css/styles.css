@@ -125,4 +125,30 @@ footer{background:#f7f7f7;padding:1rem 0;margin-top:2rem}
   }
 }
 
+/* приклад для body */
+body.dark-theme {
+    background-color: #121212;
+    color: #f1f1f1;
+}
+
+/* посилання та заголовки */
+body.dark-theme a {
+    color: #a0e0a0;
+}
+
+body.dark-theme header,
+body.dark-theme footer {
+    background-color: #1e1e1e;
+}
+
+/* клас не для ховера, а для JS */
+.js-highlight {
+    background-color: #e0f7fa;
+    color: #00695c;
+    border-radius: 4px;
+    padding: 2px 4px;
+    transition: 0.3s;
+}
+
+
 
